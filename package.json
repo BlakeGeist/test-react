@@ -1,0 +1,45 @@
+{
+  "name": "GVSCWeb",
+  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "immutable": "^3.8.2",
+    "prop-types": "^15.6.1",
+    "query-string": "^6.1.0",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0",
+    "react-modal": "^3.4.4",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-form": "^7.3.0",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "build-css": "node-less-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "server": "node ./server.js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx src/**"
+  },
+  "proxy": "http://localhost:8000",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "node-less-chokidar": "^0.1.2",
+    "npm-run-all": "^4.1.3"
+  }
+}

@@ -1,0 +1,98 @@
+body {
+  font-family: 'Open Sans', lucida grande, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+footer {
+  text-align: center;
+}
+footer .footer-bar {
+  background-color: #2d2e2f;
+  color: #ffffff;
+  flex: 1 1 100%;
+  padding: 20px 0;
+}
+main {
+  margin-top: 140px;
+}
+header,
+main,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav {
+  flex: 0 1 1400px;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  justify-content: center;
+  padding: 30px;
+}
+section .content {
+  flex: 0 1 1400px;
+}
+.home-header {
+  background-image: url('header-bg.jpg');
+  min-height: 300px;
+  text-align: center;
+}
+.home-header a {
+  color: #086e0d;
+}
+.home-header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.home-header-content h2,
+.home-header-content h3,
+.home-header-content h4 {
+  margin: 10px 0;
+}
+.services {
+  background-image: url('services-bg.jpg');
+  color: #fff;
+  text-align: center;
+  padding: 80px 30px;
+}
+.services-content {
+  display: flex;
+  flex: 0 1 1400px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-service {
+  flex: 0 1 21%;
+  padding: 15px 0;
+}
+.why-choose-us {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.why-choose-us-content {
+  flex: 0 1 1400px;
+}
+.about-portland {
+  background-image: url('about-portland.jpg');
+  min-height: 500px;
+  padding: 60px 0;
+}
+.about-portland-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.about-portland-content-text {
+  color: #666666;
+  padding: 30px;
+}
+.about-portland-content-text .signiture {
+  text-align: right;
+  font-weight: bold;
+  color: #666666;
+}
