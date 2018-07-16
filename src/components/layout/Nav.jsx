@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Nav = (props) => (
   <div className={`nav mod-${props.placement}`}>
     <div className="nav-logo">
-      <a href="/#/"><img src={require('./logo.jpg')} /></a>
+      <a href="/#/"><img alt="" src={require('./logo.jpg')} /></a>
     </div>
     <div className="nav-menu">
       <ul className="nav-menu-list">
